@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admit Card</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main id="certificate" class="container">
+        <div class="main">
+            <header>
+                <img class="main-img" src="img/logo.png" alt="">
+                <h4 class="var-name">Sheik Fazilatunnesa Mujib University, Jamalpur</h3>
+            </header>
+            <div>
+                <h2 class="admit">Admit Card</h2>
+            </div>
+            <div>
+                <p>Summer Semester Final Examination, 2021</p>
+                <p>Department: CSE</p>
+                <p>Undergtaduate Program: Bachelor of Science (B.Sc)</p>
+                <div class="grid-box">
+                    <p>Year: 4<sup>th</sup></p>
+                    <p>Semester: 2<sup>nd</sup></p>
+                    <p>Batch: <span>04</span></p>
+                    <p>Session: <span>2017-18</span></p>
+                </div>
+
+                <p id="id-no">ID: 0741810005101003</p>
+                <p>Type of Student (Regular/Retake/Improvement): Regular</p>
+
+                <p class="name-site">Name <span class="block">(Block Letter)</span>:</p>
+                <p id="student-name">MD. MAKSUDUL ALAM AKANDA</p>
+
+                <img id="signature" src="img/signature.png" alt="">
+                <p class="Examinar">Controller of Examinations</p>
+            </div>
+        </div>
+
+    </main>
+    <!-- Print Button -->
+    <button onclick="printCertificate()" class="print-btn">Print</button>
+
+    <!-- JS Link -->
+    <script>
+        function printCertificate() {
+            const printContents = document.getElementById('certificate').innerHTML;
+            const originalContents = document.body.innerHTML;
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }
+    </script>
+
+
+</body>
+
+</html>

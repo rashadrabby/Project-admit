@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px;
+    font-weight:600;
+}
+
+.container{
+    width: 850px;
+    height: auto;
+    margin: 15px auto;
+    background-color: rgb(250, 101, 151);
+}
+.main{
+    padding:50px 72px 200px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+
+}
+.main-img{
+    width: 70px;
+}
+
+.var-name{
+font-size: 30px;
+padding-left: 10px;
+}
+
+.admit{
+    font-size: 35px;
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 50px;
+}
+
+.grid-box{
+    display: grid;
+    grid-template-columns: 300px 200px;
+}
+
+#id-no{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.name-site{
+    margin-top: 60px;
+}
+.block{
+    font-weight:normal;
+}
+
+#student-name{
+    margin: 0;
+    font-size: 24px;
+}
+#signature{
+width: 120px;
+margin-top: 25px;
+}
+.Examinar{
+    margin:0px;
+}
+
+.print-btn{
+    background-color: rgb(78, 77, 77);
+    border-radius: 5px;
+    padding: 2px 15px;
+    float: right;
+    margin: 50px;
+}
